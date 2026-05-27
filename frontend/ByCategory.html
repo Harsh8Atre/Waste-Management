@@ -1,181 +1,45 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Waste by Category</title>
+    <title>SmartSort Solutions - Waste by Category</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <script src="Untitled-1.js"></script> 
 </head>
 <body>
-    <div class="container">
-        <div id="logo">SmartSort Solutions</div>
+    <div class="container" style="padding: 20px;">
+        <h1 style="margin-top: 0; color: #4CAF50;">Waste Breakdown by Category</h1>
 
-        <div class="nav-links">
-            <div class="dropdown">
-                <a href="index.html" class="active">Home</a>
-            </div>
-        
-            <div class="dropdown">
-                <div class="dropdown">
-                    <a href="#">Garbage Info</a>
-                    <div class="dropdown-content">
-                        <a href="WasteCollected.html">Waste Collected</a>
-                        <a href="ByCategory.html">By Category</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Truck Tracking</a>
-                <div class="dropdown-content">
-                    <a href="activeTrucks.html">Active Trucks</a>
-                    <a href="truckRoute.html">Truck Route</a>
-                    <a href="truckDetails.html">Truck Details</a>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Waste Analytics</a>
-                <div class="dropdown-content">
-                    <a href="areaWise.html">Area Wise</a>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Contact Us</a>
-                <div class="dropdown-content">
-                    <a href="tel:+918821808460">Mobile No.</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=IdeaSmiths8@gmail.com" target="_blank">
-                        E-mail
-                    </a>
-                </div>
-            </div>
-
-        <h1>Waste Breakdown by Category</h1>
-
-        <div class="description">
-            Here's the current breakdown of collected waste by type:
+        <div class="description" style="margin-bottom: 20px; font-size: 16px; opacity: 0.8;">
+            Here's the current real-time breakdown of metric inventory yields collected by material type:
         </div>
 
-        <div class="waste-stats">
-            <div class="stat-card">
-                <h3>Biodegradable Waste</h3>
-                <div class="stat-value" id="organicWaste">67</div>
+        <div class="waste-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Biodegradable Waste</h3>
+                <div class="stat-value" id="organicWaste" style="font-size: 28px; font-weight: bold;">67</div>
             </div>
-            <div class="stat-card">
-                <h3>Plastic Waste</h3>
-                <div class="stat-value" id="plasticWaste">33</div>
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Plastic Waste</h3>
+                <div class="stat-value" id="plasticWaste" style="font-size: 28px; font-weight: bold;">33</div>
             </div>
-            <div class="stat-card">
-                <h3>Metal Waste</h3>
-                <div class="stat-value" id="metalWaste">30</div>
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Metal Waste</h3>
+                <div class="stat-value" id="metalWaste" style="font-size: 28px; font-weight: bold;">30</div>
             </div>
-            <div class="stat-card">
-                <h3>Glass Waste</h3>
-                <div class="stat-value" id="glassWaste">10</div>
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Glass Waste</h3>
+                <div class="stat-value" id="glassWaste" style="font-size: 28px; font-weight: bold;">10</div>
             </div>
-            <div class="stat-card">
-                <h3>Paper Waste</h3>
-                <div class="stat-value" id="biomedicalWaste">50</div>
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Paper Waste</h3>
+                <div class="stat-value" id="biomedicalWaste" style="font-size: 28px; font-weight: bold;">50</div>
             </div>
-            <div class="stat-card">
-                <h3>Cardboard Waste</h3>
-                <div class="stat-value" id="ewaste">10</div>
+            <div class="stat-card" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <h3 style="margin: 0 0 10px 0;">Cardboard Waste</h3>
+                <div class="stat-value" id="ewaste" style="font-size: 28px; font-weight: bold;">10</div>
             </div>
         </div>
-
+    </div>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Waste by Category</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="Untitled-1.js"></script> 
-</head>
-<body>
-    <div class="container">
-        <div id="logo">SmartSort Solutions</div>
-
-        <div class="nav-links">
-            <div class="dropdown">
-                <a href="index.html" class="active">Home</a>
-            </div>
-        
-            <div class="dropdown">
-                <div class="dropdown">
-                    <a href="#">Garbage Info</a>
-                    <div class="dropdown-content">
-                        <a href="WasteCollected.html">Waste Collected</a>
-                        <a href="ByCategory.html">By Category</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Truck Tracking</a>
-                <div class="dropdown-content">
-                    <a href="activeTrucks.html">Active Trucks</a>
-                    <a href="truckRoute.html">Truck Route</a>
-                    <a href="truckDetails.html">Truck Details</a>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Waste Analytics</a>
-                <div class="dropdown-content">
-                    <a href="areaWise.html">Area Wise</a>
-                </div>
-            </div>
-        
-            <div class="dropdown">
-                <a href="#">Contact Us</a>
-                <div class="dropdown-content">
-                    <a href="tel:+918821808460">Mobile No.</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=IdeaSmiths8@gmail.com" target="_blank">
-                        E-mail
-                    </a>
-                </div>
-            </div>
-
-        <h1>Waste Breakdown by Category</h1>
-
-        <div class="description">
-            Here's the current breakdown of collected waste by type:
-        </div>
-
-        <div class="waste-stats">
-            <div class="stat-card">
-                <h3>Biodegradable Waste</h3>
-                <div class="stat-value" id="organicWaste">67</div>
-            </div>
-            <div class="stat-card">
-                <h3>Plastic Waste</h3>
-                <div class="stat-value" id="plasticWaste">33</div>
-            </div>
-            <div class="stat-card">
-                <h3>Metal Waste</h3>
-                <div class="stat-value" id="metalWaste">30</div>
-            </div>
-            <div class="stat-card">
-                <h3>Glass Waste</h3>
-                <div class="stat-value" id="glassWaste">10</div>
-            </div>
-            <div class="stat-card">
-                <h3>Paper Waste</h3>
-                <div class="stat-value" id="biomedicalWaste">50</div>
-            </div>
-            <div class="stat-card">
-                <h3>Cardboard Waste</h3>
-                <div class="stat-value" id="ewaste">10</div>
-            </div>
-        </div>
-
-</body>
-</html>
->>>>>>> 8a91a168ef066bd31ac9c3bb5168b66d7c3a9006
