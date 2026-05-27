@@ -86,21 +86,21 @@ if selected == "Home Dashboard":
     # Renders your static landing page index structure
     render_html_page("index.html")
 
-elif selected == "Active Trucks":
-    # Renders active truck data panels
-    render_html_page("ActiveTrucks.html")
+# elif selected == "Active Trucks":
+#     # Renders active truck data panels
+#     render_html_page("ActiveTrucks.html")
 
-elif selected == "Waste Collected":
-    # Renders your custom static analytical summary views
-    render_html_page("WasteCollected.html")
+# elif selected == "Waste Collected":
+#     # Renders your custom static analytical summary views
+#     render_html_page("WasteCollected.html")
 
-elif selected == "Area Wise View":
-    # Renders your regional area distribution frameworks
-    render_html_page("areaWise.html")
+# elif selected == "Area Wise View":
+#     # Renders your regional area distribution frameworks
+#     render_html_page("areaWise.html")
 
-elif selected == "Team Sign-in":
-    # Renders your operational login portals
-    render_html_page("Signin.html")
+# elif selected == "Team Sign-in":
+#     # Renders your operational login portals
+#     render_html_page("Signin.html")
 
 elif selected == "YOLOv8 Detection":
     st.subheader("🤖 Live Object Detection Machine Learning Core")
