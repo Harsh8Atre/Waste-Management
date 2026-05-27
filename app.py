@@ -30,20 +30,34 @@ st.set_page_config(
 def render_html_page(html_filename):
     html_path = os.path.join("frontend", html_filename)
     try:
+        # 1. Read your raw HTML file code
         with open(html_path, "r", encoding="utf-8") as f:
             html_content = f.read()
         
-        # Injecting CSS base styles to handle relative stylesheet lookups natively
-        styled_content = f"""
-        <style>
-            body {{ color: white; font-family: sans-serif; }}
-        </style>
-        {html_content}
-        """
-        # Height 700 allows scrolling inside your dashboard page frames smoothly
-        components.html(styled_content, height=700, scrolling=True)
+        # 2. Automatically find and load the matching CSS file if it exists
+        # Maps 'index.html' -> 'Styles.css', 'Signin.html' -> 'Signin.css', etc.
+        css_filename = "Styles.css" if html_filename == "index.html" else html_filename.replace(".html", ".css")
+        css_path = os.path.join("frontend", css_filename)
+        
+        css_content = ""
+        if os.path.exists(css_path):
+            with open(css_path, "r", encoding="utf-8") as f:
+                css_content = f.read()
+
+        # 3. Inject the CSS content safely into a single runtime string block
+        if css_content:
+            injected_style = f"<style>{css_content}</style>"
+            # Places the CSS code cleanly right before the closing head tag
+            if "</head>" in html_content:
+                html_content = html_content.replace("</head>", f"{injected_style}</head>")
+            else:
+                html_content = injected_style + html_content
+
+        # 4. Serve the combined result to the Streamlit UI window frame
+        components.html(html_content, height=800, scrolling=True)
+        
     except FileNotFoundError:
-        st.error(f"Could not locate '{html_filename}' inside your 'frontend' folder. Verify the file layout structure.")
+        st.error(f"Could not locate '{html_filename}' inside your 'frontend' folder.")
 
 # 2. NAVIGATION MENU (Updated to match your actual frontend modules!)
 selected = option_menu(
