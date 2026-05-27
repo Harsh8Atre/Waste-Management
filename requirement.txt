@@ -3,3 +3,5 @@ streamlit
 streamlit-option-menu
 pillow
 opencv-python-headless
+pafy
+youtube-dl
